@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>string scope and function</title>
+    <style>
+        ul{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+        }
+     li{
+        padding: 8px 30px;
+        text-decoration: none;
+    }
+     
+    </style>
+</head>
+<body>
+    <div>
+        <ul>
+            <li>item-1</li>
+            <li>item-2</li>
+            <li>item-3</li>
+            <li>item-4</li>
+            <li>item-5</li>
+            <li>item-6</li>
+            <li>item-7</li>
+        </ul>
+    </div>
+    <script>
+        //var string1 = 'this is a string';
+        //var string1 = 'this is a string2'
+        //console.log(string1)
+       // let a = 'u';
+        //console.log(a)
+         //const a = 'tayyab';
+         //console.log(a)
+         let age = '17';
+         if (age>18){
+            console.log('you drink a water');
+         }
+         else if(age==17){
+            console.log('the age is true')
+         }
+         else{
+            console.log('you drink a cold water');
+         }
+         const cups = 4;
+         switch (cups) {
+            case 4:
+                console.log('the value of case is 4');
+                break;
+                case 47:
+                console.log('the value of case is 47');
+                break;
+                case 49:
+                console.log('the value of case is 49');
+                break;
+                case 48:
+                console.log('the value of case is 48');
+                break;
+            default:
+                console.log ('the value of the case is none of the 4 47 49 48')
+                break;
+         }
+    </script>
+</body>
+</html>
