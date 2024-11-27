@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food website</title>
+   
+    <style>
+        /*body*/
+     *{
+      
+        margin: 0%;
+        padding: 0%;
+     }
+     /*navbar*/
+     #navbar{
+        display: flex;
+        position: relative;
+        align-items: center;
+        top: 0%;
+     }
+     #navbar::before{
+        content:"";
+        position: absolute;
+        background: black;
+        height: 90%;
+        width: 100%;
+        opacity: 0.5;
+        z-index: -1;
+        top: 0%;
+        left: 0%;
+     }
+     /*logo*/
+     #logo img{
+        height: 100px;
+        width: 100px;
+        margin: -9px 10px;
+     }
+     /*navbar*/
+     #navbar ul{
+        display: flex;
+        list-style: none;
+     }
+     #navbar ul li{
+        font-size: 1.3rem;
+        text-decoration: none;
+     }
+     #navbar ul li a{
+        color: white;
+        text-decoration: none;
+        padding: 6px 6px;
+        margin: 22px;
+        border-radius: 20px;
+        display: block;
+     }
+     #navbar ul li a:hover{
+      color: black;
+      background-color: white;
+     }
+     #home{
+        color: white;
+        display: flex;
+        flex-direction: column;
+        padding: 3px 200px;
+        align-items: center;
+        justify-content: center;
+        
+        height: 370px;
+     }
+     #home::before{
+    content:"";
+        position: absolute;
+        background:url(img/pexels-pixabay-326281.jpg) no-repeat center center/cover;
+        height: 100%;
+        width: 100%;
+        opacity: 0.89;
+        z-index: -1;
+        top: 0%;
+        left: 0%;
+     }
+     .h-primary{
+        color: white;
+       
+        padding: 4px;
+        font-size: 2.5rem;
+       
+        text-align: center;
+     }
+     #home p{
+        
+        justify-content: center;
+        font-size: 1.3rem;
+        text-align: center;
+     }
+     .btn{
+        background-color: brown;
+        border: 2px solid black;
+        border-radius: 23px;
+        padding: 10px 25px;
+        margin: 23px;
+        cursor: pointer;
+        font-size: 1.1rem;
+        
+         }
+         #services{
+            margin: 30px;
+            display: flex;
+         }
+         .service-container::before{
+            content:"";
+        position: absolute;
+        background:url(img/pexels-lum3n-44775-1028598.jpg) no-repeat center center/cover;
+        height: 100%;
+        width: 100%;
+        opacity: 0.89;
+        z-index: -1;
+      
+         }
+         .service-container h1{
+            color:black;
+       
+        padding: 12px;
+        font-size: 3.8rem;
+       
+        align-items: center;
+        justify-content: center;
+        display: flex;
+         }
+         #services .box{
+            border: 2px solid brown;
+            margin: 10px 5px;
+            padding: 36px 40px;
+            justify-content: center;
+            align-items: center;
+            border-radius: 23px;
+            background-color:#f2f2f2;
+            
+         }
+         #services img{
+            width: 150px;
+            height: 150px;
+            align-items: center;
+            justify-content: center;
+            margin: auto;
+            display: block;
+         }
+         #services .h-secondary{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 2.5rem;
+            align-items: center;
+    justify-content: center ;
+    display: block;
+    margin: auto;
+    padding: 12px;
+         }
+         .text{
+            font-weight: 100;
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 1.1rem;
+         }
+         #client-section{
+           
+         }
+         .clients-logo #clients {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+        
+      }
+         
+         .clients-logo img{
+            height: 100px;
+            width: 100px;
+            display: flex;
+         justify-content: center;
+         align-items: center;
+         }
+         #client-section h1{
+            color:black;
+       padding: 12px;
+       font-size: 3.8rem;
+       display: flex;
+         justify-content: center;
+         align-items: center;
+      
+         }
+    </style>
+</head>
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="img/logo-removebg-preview (1).png" alt="">
+        </div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">About Us</a></li>
+        </ul>
+    </nav>
+    <div id="home">
+        <h1 class="h-primary">
+            Welcome to My Online Meal
+        </h1>
+        <p>Food is any nutrient-rich material consumed or absorbed by humans, animals, or plants</p>
+        <p>The major sources of food are animals and plants.</p>
+        <button class="btn">Order Now</button>
+    </div>
+    <section class="service-container">
+      <h1>Our Service</h1>
+     
+      <div id="services">
+         <div class="box">
+            <img src="img/download__3_-removebg-preview.png" alt="">
+            <h2 class="h-secondary">
+               Bulk ordering
+            </h2>
+            <p class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus quae nostrum minus voluptates vitae sed. Corporis, debitis neque! Perferendis, obcaecati! Eaque labore sit consequatur. Iure suscipit ut eveniet ad non?</p>
+         </div>
+         <div class="box">
+            <img src="img/download__1_-removebg-preview.png " alt="">
+            <h2 class="h-secondary">
+               Food Catering
+            </h2>
+            <p class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus quae nostrum minus voluptates vitae sed. Corporis, debitis neque! Perferendis, obcaecati! Eaque labore sit consequatur. Iure suscipit ut eveniet ad non?</p>
+         </div>
+         <div class="box">
+            <img src="img/download-removebg-preview (1).png" alt="">
+            <h2 class="h-secondary">
+               Food ordering
+            </h2>
+            <p class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus quae nostrum minus voluptates vitae sed. Corporis, debitis neque! Perferendis, obcaecati! Eaque labore sit consequatur. Iure suscipit ut eveniet ad non?</p>
+         </div>
+      </div>
+      <section id="client-section">
+         <h1>Our Clients</h1>
+         <div class="clients-logo">
+             <div id="clients">
+     
+                 <img src="img/ca86fb1a51f4761d1246518ee7640010.png" alt="">
+             </div>
+             <div id="clients">
+                 <img src="img/ca86fb1a51f4761d1246518ee7640010.png" alt="">
+             </div>
+             <div id="clients">
+                 <img src="img/ca86fb1a51f4761d1246518ee7640010.png" alt="">
+             </div>
+             <div id="clients">
+                 <img src="img/ca86fb1a51f4761d1246518ee7640010.png" alt="">
+             </div>
+         </div>
+     </section>
+</body>
+</html>

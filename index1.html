@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Website</title>
+    <link rel="stylesheet" media="screen and (max-width:1170px)" href="CSS/phone.css" >
+    <style>
+            /* Reset styles */
+            * {
+              margin: 0;
+              padding: 0;
+            }
+            
+            /* Navbar styles */
+            #navbar {
+              display: flex;
+              position: relative;
+              align-items: center;
+              top: 0;
+            }
+            
+            #navbar::before {
+              content: "";
+              position: absolute;
+              background: black;
+              height: 90%;
+              width: 100%;
+              opacity: 0.5;
+              z-index: -1;
+              top: 0;
+              left: 0;
+            }
+            
+            /* Logo styles */
+            #logo img {
+              height: 100px;
+              width: 100px;
+              margin: -9px 10px;
+            }
+            
+            /* Navbar list styles */
+            #navbar ul {
+              display: flex;
+              list-style: none;
+            }
+            
+            #navbar ul li {
+              font-size: 1.3rem;
+            }
+            
+            #navbar ul li a {
+              color: white;
+              text-decoration: none;
+              padding: 6px;
+              margin: 22px;
+              border-radius: 20px;
+              display: block;
+            }
+            
+            #navbar ul li a:hover {
+              color: black;
+              background-color: white;
+            }
+            
+            /* Home section styles */
+            #home {
+              color: white;
+              display: flex;
+              flex-direction: column;
+              padding: 0px 200px;
+              align-items: center;
+              justify-content: center;
+              height: 310px;
+            }
+            
+            #home::before {
+              content: "";
+              position: absolute;
+              background: url(img/pexels-pixabay-326281.jpg) no-repeat center center/cover;
+              height: 68%;
+              width: 100%;
+              opacity: 0.89;
+              z-index: -1;
+              top: 0;
+              left: 0;
+            }
+            
+            /* Heading styles */
+            .h-primary {
+              color: white;
+              padding: 4px;
+              font-size: 2.5rem;
+              text-align: center;
+            }
+            
+            #home p {
+              justify-content: center;
+              font-size: 1.3rem;
+              text-align: center;
+            }
+            
+            /* Button styles */
+            .btn {
+              background-color: brown;
+              border: 2px solid black;
+              border-radius: 23px;
+              padding: 10px 25px;
+              margin: 23px;
+              cursor: pointer;
+              font-size: 1.1rem;
+            }
+            
+            /* Services section styles */
+            #services {
+              margin: 30px;
+              display: flex;
+            }
+            
+           
+            
+            .service-container h1 {
+              color: black;
+              padding: 12px;
+              font-size: 3.8rem;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+            }
+            
+            #services .box {
+              border: 2px solid brown;
+              margin: 10px 5px;
+              padding: 36px 40px;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              border-radius: 23px;
+              background-color: #f2f2f2;
+            }
+            
+            #services img {
+              width: 150px;
+              height: 150px;
+              margin: auto;
+              display: block;
+            }
+            
+            #services .h-secondary {
+              font-family: Arial, Helvetica, sans-serif;
+              font-size: 2.5rem;
+              text-align: center;
+              margin: auto;
+              padding: 12px;
+            }
+            
+            /* Text styles */
+            .text {
+              font-weight: 100;
+              font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+              font-size: 1.1rem;
+            }
+            
+            /* Client section styles */
+            #client-section{
+                height: 344px;
+                position: relative;
+            }
+            #client-section::before {
+              content: "";
+              position: absolute;
+              background: url(img/pexels-lum3n-44775-1028598.jpg) no-repeat center center/cover;
+              height: 100%;
+              width: 100%;
+              opacity: 0.8;
+              z-index: -1;
+            }
+            #client-section h1 {
+              color: black;
+              padding: 12px;
+              font-size: 3.8rem;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+            }
+            
+            #clients-logo {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+            }
+            
+            #clients-logo img {
+              height: 100px;
+              width: 100px;
+            }
+            .client-item{
+                padding: 34px;
+            }
+            /*Contact Section*/
+            #contact{
+              position: relative;
+              padding: -1px 22px;
+            }
+            #contact::before{
+              content: "";
+              position: absolute;
+              width: 100%;
+              height: 100%;
+              z-index: -1;
+              opacity: 0.8;
+              background: url(img/pexels-ifreestock-585752.jpg) no-repeat center center/cover;
+            }
+            #contact-box{
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              padding bottom: 22px;
+            }
+            #contact-box input,
+            #contact-box textarea{
+              padding: 0.5rem;
+              width: 100%;
+              border-radius: 9px;
+              font-size: 1.1rem;
+            }
+            #contact-box form{
+              width: 40%;
+            }
+            #contact-box label{
+              font-size: 1.3rem;
+              font-family: cursive;
+            }
+      
+        
+            #contact h1{
+              color: black;
+              padding: 12px;
+              font-size: 3.8rem;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+            }
+            footer{
+              background: black;
+              color: white;
+              padding: 9px 20px;
+              
+            }
+            footer div{
+              display: flex;
+              align-items: center;
+              justify-content: center;
+            }
+    </style>
+</head>
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="img/logo-removebg-preview (1).png" alt="Logo">
+        </div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">About Us</a></li>
+        </ul>
+    </nav>
+
+    <div id="home">
+        <h1 class="h-primary">Welcome to My Online Meal</h1>
+        <p>Food is any nutrient-rich material consumed or absorbed by humans, animals, or plants</p>
+        <p>The major sources of food are animals and plants.</p>
+        <button class="btn">Order Now</button>
+    </div>
+     <hr>
+    <section class="service-container">
+        <h1>Our Service</h1>
+        <div id="services">
+            <div class="box">
+                <img src="img/download-removebg-preview.png" alt="Bulk ordering">
+                <h2 class="h-secondary">Bulk ordering</h2>
+                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus quae nostrum minus voluptates vitae sed. Corporis, debitis neque! Perferendis, obcaecati! Eaque labore sit consequatur. Iure suscipit ut eveniet ad non?</p>
+            </div>
+            <div class="box">
+                <img src="img/download__3_-removebg-preview.png" alt="Food Catering">
+                <h2 class="h-secondary">Food Catering</h2>
+                <p class="text">Let us bring the flavor to your next event! Our catering services offer a wide range of delicious options to impress your guests and satisfy their appetites.Our team of experienced chefs and catering professionals will work with you to create</p>
+            </div>
+            <div class="box">
+                <img src="img/download-removebg-preview (1).png" alt="Food ordering">
+                <h2 class="h-secondary">Food ordering</h2>
+                <p class="text">Craving something delicious? Look no further! Our food ordering service brings the best of local cuisine right to your doorstep. With a wide variety of dishes to choose fromyou're sure to find something to satisfy your cravings. </p>
+            </div>
+        </div>
+    </section>
+        <hr>
+    <section id="client-section">
+        <h1>Our Clients</h1>
+        <div id="clients-logo">
+            <div class="client-item">
+    
+                <img src="img/ca86fb1a51f4761d1246518ee7640010.png" alt="">
+            </div>
+            <div class="client-item">
+                <img src="img/download__1_-removebg-preview (1).png" alt="">
+            </div>
+            <div class="client-item">
+                <img src="img/download__2_-removebg-preview (1).png" alt="">
+            </div>
+            <div class="client-item">
+                <img src="img/download__2_-removebg-preview (3).png" alt="">
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <h1 >Contact Us</h1>
+        <div id="contact-box">
+          <form action="">
+            <div class="contact-form">
+              <label for="name">Name </label>
+              <input type="text" name="name" id="name" placeholder="enter your name">
+            </div>
+            <div class="contact-form">
+              <label for="email">Email</label>
+              <input type="email" name="email" id="email" placeholder="enter your email">
+            </div>
+            <div class="contact-form">
+              <label for="number">Number </label>
+              <input type="number" name="number" id="number" placeholder="enter your number">
+            </div>
+            <div class="contact-form">
+              <label for="message">message </label>
+              <input type="message" name="message" id="message" placeholder="enter your message">
+            </div>
+          </form>
+        </div>
+    </section>
+    <Footer>
+        <div class="center">
+          copyright &copy; www.myonlinemeal.com. All right reserved|
+        </div>
+    </Footer>
+</body>
+</html>
+
+</html>
