@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fruit website</title>
+    <style>
+.left{
+border: 2px solid red;
+display: inline-block;
+top: 22px;
+left: 12px;
+position: absolute;
+}
+.right{
+    display: inline-block;
+border: 2px solid green;
+display: inline-block;
+top: 22px;
+right: 12px;
+position: absolute;
+}
+.mid{
+border: 2px solid black;
+display: block;
+margin: 12px auto;
+width: 40%;
+
+
+}
+.nav{
+   display: inline-block;
+}
+.nav li{
+    padding: 12px 12px ;
+    margin: 5px ;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    font-size: 12px;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <div class="left">
+            left
+        </div>
+        <div class="right">
+            <input type="text" placeholder="search">
+            <input type="submit" value="Get A Quote">
+          
+        </div>
+        <div class="mid">
+            <ul class="nav">
+                <li>Home</li>
+                <li>Fruits</li>
+                <li>Contact us</li>
+                <li>About us</li>
+            </ul>
+        </div>
+    </header>
+</body>
+</html>

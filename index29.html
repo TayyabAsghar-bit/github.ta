@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sport website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gupter:wght@400;500;700&display=swap" rel="stylesheet">
+    <style> 
+    body{
+        background: url(img/startup-849804_1280.jpg);
+        padding: 0px;
+        margin: 0px;
+        color: black;
+        font-family: "Gupter", serif;
+  font-weight: 500;
+  font-style: normal;
+    
+       }   
+       header{
+        background-color: #3fa3bc;
+       }      
+    .left{
+        top: -24px;
+        left: 22px;
+        position: absolute;
+            
+            display: inline-block;
+        }
+    .right{
+        top: 4px;
+        right: 22px;
+        position: absolute;
+        
+        display: inline-block;
+        
+    }
+    .mid{
+        
+        display: block;
+        width: 560px;
+        margin: 0px auto;
+    }
+    .nav{
+        display: inline-block;
+    }
+    .nav li{
+
+        display: inline-block;
+        color: rgb(211, 27, 27);
+        font-size: 20px;
+    }
+    .nav li a{
+      color: #000001;
+        padding: 12px;
+        text-decoration: none;
+    }
+    .nav li a:hover,.nav li a.active{
+        text-decoration: underline;
+        color: rgb(255, 255, 255);
+    }
+    .left img{
+        width: 100px;
+        height: 100px;
+    }
+    .btn{
+      padding: 8px;
+      margin: 6px;
+      color: #007b7b;
+      background-color:white;
+      border: 2px solid rgb(17, 13, 13);
+      border-radius: 23px;
+    }
+    .btn:hover{
+        text-decoration: underline;
+        color: rgb(1, 1, 1);
+      }
+      .container{
+        height: 500px;
+        width: 100%;
+        border: 2px solid red;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+      }
+      .item{
+        border: 2px solid;
+        height: 170px;
+        width: 170px;
+        padding: 33px;
+        margin: 22px;
+      }
+      h1{
+        width: 22px;
+        height: 22px;
+        margin: 12px;
+        padding: 12px;
+        right: 11px;
+      }
+    </style>
+</head>
+<body>
+    <header>
+    <div class="left">
+        <img src="img/logo.png.png" alt="">
+    </div>
+    <div class="right">
+        <Button class="btn">Sign In</Button><Button class="btn">Sign Up</Button>
+    </div>
+    
+    <div class="mid">
+        <ul class="nav">
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">marketing</a></li>
+            <li><a href="#">developer info</a></li>
+            <li><a href="#">web design</a></li>
+        </ul>
+    </div>
+</header>
+<div class="container">
+  <h1>Sport Complex</h1>
+  <div class="item" id="item1">
+    
+  </div>
+  <h1>Sport info</h1>
+  <div class="item" id="item2">
+   
+  </div>
+</div>
+</body>
+</html>

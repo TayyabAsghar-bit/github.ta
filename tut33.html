@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>before and after style</title>
+    <style>
+body{
+    background-color: black;
+    color: white;
+}
+section{
+    height: 233px;
+    display: flex;
+    flex-direction: column;
+    margin: 3px 23px;
+    align-items: center;
+    border: 2px solid red;
+}
+.navigation{
+    display: flex;
+    flex-direction: row;
+    font-size: 31px;
+}
+.item{
+    padding: 8px;
+    margin: 3px;
+    list-style: none;
+}
+section ::before{
+    
+}
+p{
+    text-align: center;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li class="item" id="item1"> <a href="">Home</a></li>
+                <li class="item" id="item2"><a href="">about us</a></li>
+                <li class="item" id="item3"><a href="">contact us</a></li>
+                <li class="item" id="item4"><a href="">Services</a></li>
+            </ul>
+        </nav>
+        <section>
+            <h2>this is section</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur quos itaque obcaecati voluptatum distinctio, dolorem magnam esse unde cupiditate, atque non quasi! Atque perferendis sunt consequatur porro nihil eius illo.</p>
+        </section>
+    </header>
+</body>
+</html>

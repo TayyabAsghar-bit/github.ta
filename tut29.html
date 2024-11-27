@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        .container{
+            height: 544px;
+            width: 100%;
+            border: 2px solid black;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+        .item{
+            background-color: gray;
+            width: 200px;
+            height: 200px;
+            padding: 1px;
+            margin: 14px;
+            border: 2px solid green;
+        }
+    </style>
+</head>
+<body>
+    <h1>This is a flexbox</h1>
+    <div class="container">
+        <div class="item" id="item1">first</div>
+        <div class="item" id="item2">second</div>
+        <div class="item" id="item3">third</div>
+        <div class="item" id="item4">fourth</div>
+        <div class="item" id="item5">fifth</div>
+        <div class="item" id="item6">sixth</div>
+    </div>
+</body>
+</html>
